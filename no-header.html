@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class='no-header-page wsite-theme-light'>
+
+  <div class="wrapper">
+    <div class="header-wrap">
+      <div class="nav-wrap">
+        <div id="logo">{logo}</div>
+        <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+        <div class="menu">
+          <div class="container">
+            <div class="search">{search}</div>
+            {menu}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-wrap">
+      {{#sections}}
+        <div class="container">{content}</div>
+      {{/sections}}
+    </div>
+
+
+    <div class="sticky-footer-push"></div>
+
+  </div><!--/.wrapper-->
+
+  <div id="footer-wrap">
+    <div class="container">{footer}</div>
+  </div>
+
+  <div class="navmobile-wrapper">
+    <div id="navmobile" class="nav">{menu}</div>
+  </div>
+
+  <script type="text/javascript" src="/files/theme/mobile.js"></script>
+  <script type="text/javascript" src="/files/theme/plugins.js"></script>
+  <script type="text/javascript" src="/files/theme/custom.js"></script>
+
+</body>
+</html>
